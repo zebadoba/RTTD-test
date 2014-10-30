@@ -12,7 +12,7 @@ Follow all the regular Pi setup instructions for the the basic kiosk as listed a
 
 ## Running
 
-Install an older version 0.10.xx of node.js as `sudo pi` [as detailed here] (https://ariejan.net/2011/10/24/installing-node-js-and-npm-on-ubuntu-debian/)
+Install an older version 0.10.xx of node.js as `sudo pi` [as detailed here] (https://ariejan.net/2011/10/24/installing-node-js-and-npm-on-ubuntu-debian/) in your user directory
 
     git clone https://github.com/joyent/node.git
     cd node
@@ -23,23 +23,23 @@ Install an older version 0.10.xx of node.js as `sudo pi` [as detailed here] (htt
     sudo make install
 	
 Then, check if node was installed correctly:
-	
-   node -v
+
+    node -v
 	
 Skip their npm install instructions as that script is no longer available.  Use `apt-get` for npm install.	
 
     apt-get install npm
 	
 Then, check if node was installed correctly:
-	
+
     npm -v
 	
 Install required modules
 
     npm install
 	
-Copy the RTTD to your pi directory	
-	
+Copy the RTTD to your pi directory
+
     git clone https://github.com/brendannee/Realtime-Transit-Display.git
 	
 Copy `config-sample.json` to `config.json`
