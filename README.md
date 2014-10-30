@@ -16,8 +16,8 @@ Install an older version 0.10.xx of node.js as sudo pi [as detailed here] (https
 
     git clone https://github.com/joyent/node.git
     cd node
-    git tag # Gives you a list of released versions
-    git checkout v0.10.xx
+    git tag # [Gives you a list of released versions]
+    git checkout v0.10.xx  [Select your version]
     ./configure
     make
     sudo make install
