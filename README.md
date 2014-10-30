@@ -8,7 +8,7 @@ You can see the Realtime Transit Display in use at [transit.bn.ee](http://transi
 
 ## Pi Setup
 
-Follow all the regular Pi setup instructions for the the basic kiosk as listed above.  After testing and getting the BART arrival display to work correctly, comment out the '@chromium --kiosk --incognito bart.blinktag.com/?station=16T" with the '#' to prevent the autostart.
+Follow all the regular Pi setup instructions for the the basic kiosk as listed above.  After testing and getting the BART arrival display to work correctly, comment out the '@chromium --kiosk --incognito bart.blinktag.com/?station=16T' with the '#' to prevent the autostart.
 
 ## Running
 
