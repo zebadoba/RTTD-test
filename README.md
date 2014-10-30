@@ -8,11 +8,11 @@ You can see the Realtime Transit Display in use at [transit.bn.ee](http://transi
 
 ## Pi Setup
 
-Follow all the regular Pi setup instructions for the the basic kiosk as listed above.  After testing and getting the BART arrival display to work correctly, comment out the '@chromium --kiosk --incognito bart.blinktag.com/?station=16T' with the '#' to prevent the autostart.
+Follow all the regular Pi setup instructions for the the basic kiosk as listed above.  After testing and getting the BART arrival display to work correctly, comment out the `@chromium --kiosk --incognito bart.blinktag.com/?station=16T` with the `#` to prevent the autostart.
 
 ## Running
 
-Install an older version 0.10.xx of node.js as sudo pi [as detailed here] (https://ariejan.net/2011/10/24/installing-node-js-and-npm-on-ubuntu-debian/)
+Install an older version 0.10.xx of node.js as `sudo pi` [as detailed here] (https://ariejan.net/2011/10/24/installing-node-js-and-npm-on-ubuntu-debian/)
 
     git clone https://github.com/joyent/node.git
     cd node
@@ -24,15 +24,15 @@ Install an older version 0.10.xx of node.js as sudo pi [as detailed here] (https
 	
 Then, check if node was installed correctly:
 	
-	node -v
+   node -v
 	
-Skip their npm install instructions as that script is no longer available.  Use 'apt-get' for npm install.	
+Skip their npm install instructions as that script is no longer available.  Use `apt-get` for npm install.	
 
-	apt-get install npm
+    apt-get install npm
 	
 Then, check if node was installed correctly:
 	
-	npm -v
+    npm -v
 	
 Install required modules
 
@@ -40,7 +40,7 @@ Install required modules
 	
 Copy the RTTD to your pi directory	
 	
-	git clone https://github.com/brendannee/Realtime-Transit-Display.git
+    git clone https://github.com/brendannee/Realtime-Transit-Display.git
 	
 Copy `config-sample.json` to `config.json`
 
