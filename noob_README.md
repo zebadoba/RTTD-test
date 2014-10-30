@@ -63,12 +63,6 @@ Run the app
 View the site locally
 Visit http://localhost:3000 in your browser.
 
-Set up for auto start up by adding
-
-    @chromium --kiosk --incognito localhost:3000
-
-to /etc/xdg/lxsession/LXDE/autostart with pico or nano.
-
 
 ## APIs
 
