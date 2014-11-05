@@ -56,7 +56,7 @@ function updateBARTDepartures(){
     url: 'http://api.bart.gov/api/etd.aspx',
     data: {
       cmd: 'etd',
-      orig: '16TH',
+      orig: 'EMBR',
       key: bartAPIKey
     },
     dataType: 'xml',

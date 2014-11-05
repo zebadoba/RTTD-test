@@ -18,8 +18,8 @@ header {
   height: 100%;
 }
 #main .grid-three {
-  width: 33.333%;
-  min-width: 415px;
+  width: 33.333333%;
+  min-width: 450px;
   float: left;
   min-height: 20px;
   -webkit-box-sizing: border-box;
