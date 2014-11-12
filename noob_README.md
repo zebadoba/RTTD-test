@@ -13,13 +13,16 @@ Follow all the regular Pi setup instructions for the the basic kiosk as
 listed above.  After testing and getting the BART arrival display to 
 work correctly, comment out the `@chromium --kiosk --incognito 
 bart.blinktag.com/?station=16T` with the `#` to prevent the autostart.
+
 Overscan not working correctly?
 
     sudo nano /boot/config.txt 
 
 scroll to the bottom for the config inserted by the NOOBS config utility and adjust per the instructions in the config.txt file.
 ## Running
-Install an older version 0.10.xx of node.js as detailed here (https://ariejan.net/2011/10/24/installing-node-js-and-npm-on-ubuntu-debian/) in your user directory
+We need to install an older version 0.10.xx of node.js in our user directory These are the [Orginal Instruction](https://ariejan.net/2011/10/24/installing-node-js-and-npm-on-ubuntu-debian/) I used as a reference.
+
+Modifed node.js instructions for the Realtime Transit Display
 
     sudo apt-get update
     sudo apt-get install git-core curl build-essential openssl libssl-dev
@@ -39,9 +42,7 @@ Then, check if node was installed correctly:
 
     node -v
     
-Skip the npm install instructions as that script is no longer available, 
-and it is not installed with the older version of Node.js.  Use 
-`apt-get` for npm install.
+Install npm.
 
     apt-get install npm
 	
@@ -49,7 +50,7 @@ Then, check if node was installed correctly:
 
     npm -v
 	
-Copy the RTTD to your pi directory
+Copy the Realtime Transit Dispalay code to your pi directory
 
     git clone https://github.com/brendannee/Realtime-Transit-Display.git 
 
@@ -57,17 +58,23 @@ Change directories in to the Realtime-Transit-Display directory
 
     cd Realtime-Transit-Display
  
+ Or use a short cut!
+ 
+    cd Re*
+    
 Copy `config-sample.json` to `config.json`
 
     cp config-sample.json config.json 
     
-Add your [wunderground token](http://www.wunderground.com/weather/api/) and [Uber Token](https://developer.uber.com) to `config.json`.
+Set up your own [wunderground token](http://www.wunderground.com/weather/api/) and [Uber Token](https://developer.uber.com) and then add them to `config.json` with nano.
 
-Install required modules
+    nano config.json
+
+npm installation of required modules
 
     npm install 
     
-Run the acutal application
+Run the acutal background application
 
     npm start
     
@@ -80,6 +87,7 @@ You can start Chromium in kisok mode with the following command
 After any reboots you will need to restart the application and Chromium.  The easiest way to do this is via command line with two windows, one for 
 
     npm start
+    
  and one for 
  
     @chromium --kiosk --incognito localhost:3000
@@ -90,7 +98,8 @@ API](http://api.bart.gov) * [NextMUNI
 API](http://www.sfmta.com/cms/asite/nextmunidata.htm) * [Uber 
 API](https://developer.uber.com)
 ## Credits
-Brendan Nee me@bn.ee
+Brendan Nee me@bn.ee -- All the code, all the version, all the instructions and Readme V1
+Andy -- he wrote the NOOB_readme as the strugled with basic Linux
 ## License
 (The MIT License) Copyright (c) 2014 Brendan Nee &lt;me@bn.ee&gt; 
 Permission is hereby granted, free of charge, to any person obtaining a 
