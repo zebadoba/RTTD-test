@@ -61,7 +61,8 @@ Copy `config-sample.json` to `config.json`
 
     cp config-sample.json config.json 
     
-Add your [wunderground token](http://www.wunderground.com/weather/api/) and [Uber Token](https://developer.uber.com) to `config.json`. 
+Add your [wunderground token](http://www.wunderground.com/weather/api/) and [Uber Token](https://developer.uber.com) to `config.json`.
+
 Install required modules
 
     npm install 
@@ -71,6 +72,18 @@ Run the acutal application
     npm start
     
 View the site locally Visit http://localhost:3000 in your browser.
+You can start Chromium in kisok mode with the following command 
+
+    @chromium --kiosk --incognito localhost:3000
+
+## Post Install
+After any reboots you will need to restart the application and Chromium.  The easiest way to do this is via command line with two windows, one for 
+
+    npm start
+ and one for 
+ 
+    @chromium --kiosk --incognito localhost:3000
+    
 ## APIs
 * [Weather Underground](http://api.wunderground.com) * [BART 
 API](http://api.bart.gov) * [NextMUNI 
