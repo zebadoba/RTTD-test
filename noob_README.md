@@ -13,6 +13,9 @@ Follow all the regular Pi setup instructions for the the basic kiosk as
 listed above.  After testing and getting the BART arrival display to 
 work correctly, comment out the `@chromium --kiosk --incognito 
 bart.blinktag.com/?station=16T` with the `#` to prevent the autostart.
+Overscan not working correctly?
+    sudo nano /boot/config.txt 
+scroll to the bottom for the config inserted by the NOOBS config utility and adjust per the instructions in the config.txt file.
 ## Running
 Install an older version 0.10.xx of node.js as `sudo pi` [as detailed 
 here] 
@@ -23,13 +26,18 @@ in your user directory
     sudo apt-get install git-core curl build-essential openssl libssl-dev
     git clone https://github.com/joyent/node.git
     cd node
-    git tag # [Gives you a list of released versions]
+    git tag 
+This will give you a list of version
+
     git checkout v0.10.xx [Select your version]
     ./configure
     make
+This will take a while . . . 
+
     sudo make install
 	
 Then, check if node was installed correctly:
+
     node -v
     
 Skip the npm install instructions as that script is no longer available, 
