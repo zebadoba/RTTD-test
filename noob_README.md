@@ -18,9 +18,9 @@ Install an older version 0.10.xx of node.js as `sudo pi` [as detailed
 here] 
 (https://ariejan.net/2011/10/24/installing-node-js-and-npm-on-ubuntu-debian/) 
 in your user directory
+
     sudo apt-get update
-    sudo apt-get install git-core curl build-essential openssl 
-libssl-dev
+    sudo apt-get install git-core curl build-essential openssl libssl-dev
     git clone https://github.com/joyent/node.git
     cd node
     git tag # [Gives you a list of released versions]
