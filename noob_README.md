@@ -14,7 +14,9 @@ listed above.  After testing and getting the BART arrival display to
 work correctly, comment out the `@chromium --kiosk --incognito 
 bart.blinktag.com/?station=16T` with the `#` to prevent the autostart.
 Overscan not working correctly?
+
     sudo nano /boot/config.txt 
+
 scroll to the bottom for the config inserted by the NOOBS config utility and adjust per the instructions in the config.txt file.
 ## Running
 Install an older version 0.10.xx of node.js as `sudo pi` [as detailed 
@@ -27,9 +29,9 @@ in your user directory
     git clone https://github.com/joyent/node.git
     cd node
     git tag 
-This will give you a list of version
+`git tag` will give you a list of all the versions
 
-    git checkout v0.10.xx [Select your version]
+    git checkout v0.10.9 [this is the last stable version of 0.10]
     ./configure
     make
 This will take a while . . . 
