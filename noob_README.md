@@ -80,7 +80,7 @@ Set up your own [wunderground token](http://www.wunderground.com/weather/api/) a
 
     nano config.json
 
-npm installation of required modules
+npm installation of required modules, (may have an occasional warning for empty repository fields)
 
     npm install 
     
