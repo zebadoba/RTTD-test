@@ -102,14 +102,19 @@ After any reboots you will need to restart the application and Chromium.  The ea
  and one for 
  
      chromium --kiosk --incognito localhost:3000
+     
+     
 ## APIs
 * [Weather Underground](http://api.wunderground.com) * [BART 
 API](http://api.bart.gov) * [NextMUNI 
 API](http://www.sfmta.com/cms/asite/nextmunidata.htm) * [Uber 
 API](https://developer.uber.com)
+
 ## Credits
 Brendan Nee me@bn.ee -- All the code, all the version, all the instructions and Readme V1
+
 Andy -- he wrote the NOOB_readme as he strugled with basic Linux commands
+
 ## License
 (The MIT License) Copyright (c) 2014 Brendan Nee &lt;me@bn.ee&gt; 
 Permission is hereby granted, free of charge, to any person obtaining a 
