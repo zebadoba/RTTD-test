@@ -9,7 +9,7 @@ You can see the Realtime Transit Display in use at
 power the display, [see this 
 post](http://blog.bn.ee/2013/01/11/building-a-real-time-transit-information-kiosk-with-raspberry-pi/).
 ## Noob Note
-Some things require sudo, some do not.  I cannot expalin why, but anything fails, just retry it with sudo (SuperUser do) in front of it.
+Some things require `sudo`, some do not.  I cannot expalin why, but anything fails, just retry it with `sudo` (SuperUser do) in front of it.
 ## Pi Setup
 Follow all the regular Pi setup instructions for the the basic kiosk as 
 listed above.  After testing and getting the BART arrival display to 
@@ -44,7 +44,7 @@ Then, check if node was installed correctly:
 
     node -v
 
-It will return your version if all went well.
+It will return your version if all went well. `v0.10.9`
 
 Install npm.
 
@@ -53,7 +53,9 @@ Install npm.
 Then, check if node was installed correctly:
 
     npm -v
-	
+
+It will return your version if all went well. `1.2.24` (1.2.24 as of 11/13/2014)
+
 Copy the Realtime Transit Dispalay code to your pi directory
 
     git clone https://github.com/brendannee/Realtime-Transit-Display.git 
