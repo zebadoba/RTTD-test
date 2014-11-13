@@ -109,7 +109,7 @@ API](http://www.sfmta.com/cms/asite/nextmunidata.htm) * [Uber
 API](https://developer.uber.com)
 ## Credits
 Brendan Nee me@bn.ee -- All the code, all the version, all the instructions and Readme V1
-Andy -- he wrote the NOOB_readme as the strugled with basic Linux
+Andy -- he wrote the NOOB_readme as he strugled with basic Linux commands
 ## License
 (The MIT License) Copyright (c) 2014 Brendan Nee &lt;me@bn.ee&gt; 
 Permission is hereby granted, free of charge, to any person obtaining a 
