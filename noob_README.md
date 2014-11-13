@@ -56,6 +56,10 @@ Then, check if node was installed correctly:
 
 It will return your version if all went well. `1.2.24` (1.2.24 as of 11/13/2014)
 
+Go up one directory, back to your home directory, as you are still in `/home/pi/node`
+
+    cd ..
+
 Copy the Realtime Transit Dispalay code to your pi directory
 
     git clone https://github.com/brendannee/Realtime-Transit-Display.git 
@@ -84,20 +88,20 @@ Run the acutal background application
 
     npm start
     
-View the site locally Visit http://localhost:3000 in your browser.
-You can start Chromium in kisok mode with the following command 
+View the site locally Visit `http://localhost:3000` in your browser.
+You can start Chromium in kisok mode with the following command from the terminal
 
-    @chromium --kiosk --incognito localhost:3000
+    chromium --kiosk --incognito localhost:3000
 
 ## Post Install
-After any reboots you will need to restart the application and Chromium.  The easiest way to do this is via command line with two windows, one for 
+After any reboots you will need to restart the application and Chromium.  The easiest way to do this is via command line with two windows, one for the background applications
 
+    cd Realtime-Transit-Display
     npm start
     
  and one for 
  
-    @chromium --kiosk --incognito localhost:3000
-    
+     chromium --kiosk --incognito localhost:3000
 ## APIs
 * [Weather Underground](http://api.wunderground.com) * [BART 
 API](http://api.bart.gov) * [NextMUNI 
