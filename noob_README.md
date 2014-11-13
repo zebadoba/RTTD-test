@@ -9,12 +9,12 @@ You can see the Realtime Transit Display in use at
 power the display, [see this 
 post](http://blog.bn.ee/2013/01/11/building-a-real-time-transit-information-kiosk-with-raspberry-pi/).
 ## Noob Note
-Some things require `sudo`, some do not.  I cannot expalin why, but anything fails, just retry it with `sudo` (SuperUser do) in front of it.
+Some things require `sudo`, some do not.  I cannot explain why, but anything fails, just retry it with `sudo` (SuperUser do) in front of it.
 ## Pi Setup
-Follow all the regular Pi setup instructions for the the basic kiosk as 
+Follow all the regular Pi setup instructions for  the basic kiosk as 
 listed above.  After testing and getting the BART arrival display to 
 work correctly, comment out the `@chromium --kiosk --incognito 
-bart.blinktag.com/?station=16T` with the `#` to prevent the autostart.
+bart.blinktag.com/?station=16ST` with the `#` to prevent the autostart.
 
 Overscan not working correctly?
 
@@ -22,9 +22,9 @@ Overscan not working correctly?
 
 scroll to the bottom for the config inserted by the NOOBS config utility and adjust per the instructions in the config.txt file.
 ## Running
-We need to install an older version 0.10.xx of node.js in our user directory These are the [Orginal Instruction](https://ariejan.net/2011/10/24/installing-node-js-and-npm-on-ubuntu-debian/) I used as a reference.
+We need to install an older version 0.10.xx of node.js in our user directory These are the [Original Instruction](https://ariejan.net/2011/10/24/installing-node-js-and-npm-on-ubuntu-debian/) I used as a reference.
 
-Modifed node.js instructions for the Realtime Transit Display
+Modified node.js instructions for the Realtime Transit Display
 
     sudo apt-get update
     sudo apt-get install git-core curl build-essential openssl libssl-dev
@@ -60,7 +60,7 @@ Go up one directory, back to your home directory, as you are still in `/home/pi/
 
     cd ..
 
-Copy the Realtime Transit Dispalay code to your pi directory
+Copy the Realtime Transit Display code to your pi directory
 
     git clone https://github.com/brendannee/Realtime-Transit-Display.git 
 
@@ -84,12 +84,12 @@ npm installation of required modules
 
     npm install 
     
-Run the acutal background application
+Run the actual background application
 
     npm start
     
 View the site locally Visit `http://localhost:3000` in your browser.
-You can start Chromium in kisok mode with the following command from the terminal
+You can start Chromium in kiosk mode with the following command from the terminal
 
     chromium --kiosk --incognito localhost:3000
 
@@ -102,8 +102,13 @@ After any reboots you will need to restart the application and Chromium.  The ea
  and one for 
  
      chromium --kiosk --incognito localhost:3000
-     
-     
+
+## Editing the display layout
+
+Selecting your local BART station and the local Muni routes are all detailed in `main.js` located inside `/public/javascripts/`  
+
+Use the handy dandy BlinkTag site `bart.blinktag.com` to get the correct four letter code for your Bart Station.
+
 ## APIs
 * [Weather Underground](http://api.wunderground.com) * [BART 
 API](http://api.bart.gov) * [NextMUNI 
@@ -113,7 +118,7 @@ API](https://developer.uber.com)
 ## Credits
 Brendan Nee me@bn.ee -- All the code, all the version, all the instructions and Readme V1
 
-Andy -- he wrote the NOOB_readme as he strugled with basic Linux commands
+Andy -- he wrote the NOOB_readme as he struggled with basic Linux
 
 ## License
 (The MIT License) Copyright (c) 2014 Brendan Nee &lt;me@bn.ee&gt; 
